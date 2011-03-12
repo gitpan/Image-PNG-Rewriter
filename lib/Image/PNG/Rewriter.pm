@@ -7,7 +7,7 @@ use Compress::Zlib qw();
 use Carp;
 use POSIX qw/ceil/;
 
-our $VERSION = '0.8';
+our $VERSION = '0.9';
 our $PNG_MAGIC = "\x89\x50\x4E\x47\x0D\x0A\x1A\x0A";
 
 require XSLoader;

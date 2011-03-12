@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Image-PNG-Rewriter
-version:            0.8
+version:            0.9
 abstract:           Rewrite and Refilter PNG images
 author:
     - Bjoern Hoehrmann <bjoern@hoehrmann.de>

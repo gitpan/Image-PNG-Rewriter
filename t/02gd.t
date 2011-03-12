@@ -32,9 +32,9 @@ $re->refilter(@random_filters);
 my $re_png = $re->as_png;
 
 {
-  use GD 'GD_CMP_IMAGE';
+  GD->import('GD_CMP_IMAGE');
   my $gd2 = GD::Image->newFromPngData($re_png, 1);
-  ok(!($gd->compare($gd2) & GD::GD_CMP_IMAGE));
+  ok(!($gd->compare($gd2) & GD::GD_CMP_IMAGE()));
 }
 
 open my $f2, '<', \$re_png;
